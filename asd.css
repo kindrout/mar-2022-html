@@ -1,0 +1,26 @@
+h2 {
+    background: yellow;
+}
+h1 {
+    background: yellow;
+    color: crimson;
+    text-align: center;
+}
+a {
+    color: crimson;
+}
+li {
+    background: yellow;
+    color: crimson;
+}
+p {
+    background: #c24f4f;
+    color: blue;
+    text-align: center;
+}
+img {
+    width: 200px;
+}
+body {
+    background: burlywood;
+}
