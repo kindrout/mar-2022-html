@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+.widgets {
+    width: 100vw;
+    height: 400px;
+    background: aqua;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+}
+
+.big-widgets {
+    width: 32vw;
+    height: 300px;
+    background: aquamarine;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+}
+
+.bigger-widgets {
+    width: 32vw;
+    height: 300px;
+    background: aquamarine;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.father {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.huge-widgets {
+    width: 32vw;
+    height: 300px;
+    background: aquamarine;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.contact {
+    width: 100vw;
+    height: 700px;
+    background: blue;
+    font-size: 40px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
