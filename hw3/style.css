@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.bg {
+    height: 1000px;
+    width: 100vw;
+    background: black;
+    display: flex;
+}
+
+.container {
+    margin-top: 150px;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    background: #a699b3;
+}
+
+.block {
+    background: burlywood;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    top: 200px;
+
+}
+
+.container > div:nth-child(1) {
+    margin-right: 500px;
+}
+
+.container > div:nth-child(3) {
+    margin-left: 500px;
+}
