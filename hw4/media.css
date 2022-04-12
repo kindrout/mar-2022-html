@@ -1,0 +1,20 @@
+@media screen and (max-width: 1000px) {
+    .block {
+        background: aqua;
+    }
+
+    .global_bg {
+        flex-direction: column;
+    }
+
+    .h {
+        width: 100%;
+        background: #a699b3;
+        height: 250px;
+    }
+
+    .noglobal {
+        width: 100%;
+    }
+
+}
