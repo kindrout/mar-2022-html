@@ -1,9 +1,9 @@
 function square(a,b,action) {
-    let answer = (a * b);
-    console.log(answer);
+    return a * b;
 }
 
-square(12,24);
+console.log(square(12,24));
+
 
 
 
@@ -29,35 +29,75 @@ function text (massage) {
 text('Hello Guys');
 
 function list(text1, number) {
-    document.write(`<ul>
-        <li>${text1}</li>
-        <li>${text1}</li>
-        <li>${text1}</li>
-    </ul>`);
-}
+   document.write(`<ol>`)
+    for (let i = 0; i < number; i++) {
+        document.write(`<li>${text1}</li>`)
+    }
 
-list('Hello Girls', 12);
+    }
+   document.write(`</ol>`)
 
-function tester(a,b,c) {
-    if (a < b && a < c) {
-        console.log(a);
-    }else if (b < a && b < c) {
-        console.log(b);
-    }else if (c < b && c < a) {
-        console.log(c);
-    }else {
-        console.log(NaN);
+
+list('Hello Girls', 19);
+
+
+let num = [23,45,88,54,12,34]
+// function minCalc (array) {
+//    let minNum = array[0];
+//     for (let i = 0; i < minNum; i++)
+//        if (minNum > array[i]) {
+//            minNum = array[i];
+//        }
+//
+//     console.log(minNum);
+//    }
+//
+// minCalc(num);
+
+
+
+
+
+
+function minCalc (arr) {
+    let minNum = arr[0]
+    for (let i = 0; i < minNum; i++) {
+        const minNumElement = arr[i];
+        if (minNum > arr[i]) {
+            minNum = arr[i]
+            console.log(minNum);
+        }
     }
 }
 
-tester(13,19,2);
+minCalc (num);
+
+
+// function calc() {
+//     let result = 0;
+//     for (let item of arguments) {
+//         result = result + item;
+//     }
+//     return result;
+// }
+//
+// console.log(calc(12,22,33,44));
 
 function calc() {
     let result = 0;
     for (let item of arguments) {
-        result = result + item;
+        result = item + result;
     }
     return result;
 }
 
-console.log(calc(12,22,33,44));
+console.log(calc(12,23,55,63,78));
+
+
+
+
+
+
+
+
+
