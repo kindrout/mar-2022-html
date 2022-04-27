@@ -12,7 +12,6 @@ let mas = [
     {name:'Andiy', age: 22, status: 'true', mind: 'off'},
 ]
 
-
 function mass(array) {
     for (let item of array) {
         console.log(item);
@@ -92,12 +91,4 @@ function calc() {
 }
 
 console.log(calc(12,23,55,63,78));
-
-
-
-
-
-
-
-
 
