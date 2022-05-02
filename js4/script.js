@@ -52,21 +52,16 @@
 //     }
 // minCalc(numbers);
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-
-let numbers = [10,32,4,5,7,67,67,11];
-function plus() {
-    let result = 0;
-    for (const item of arguments) {
-        result = result + item
-    }
-    return result;
-}
-
-console.log(plus(numbers));
-
-
-
-
+// let numbers = [20,30,12];
+// function calc(arguments) {
+//     let result = 0;
+//     for (const argument of arguments) {
+//         result = argument + result;
+//     }
+//     return result;
+// }
+//
+// console.log(calc(numbers));
 
 
 
