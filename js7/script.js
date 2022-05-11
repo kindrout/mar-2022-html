@@ -54,6 +54,14 @@ function Car () {
     this.drive = function (msg) {
         return `we drive ${msg} speed`
     }
+
+    this.increaseMaxSpeed = function (msg) {
+        this.maxSpeed = msg
+    }
+
+    this.newDriver = function (msg) {
+        this.driver = msg
+    }
     // this.info = function (msg) {
     //     let information = 0;
     //     for (const msgKey in Car) {
@@ -76,11 +84,19 @@ console.log(car1.drive('222'));
 
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 
-
+car1.increaseMaxSpeed(310);
+console.log(car1);
 
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 //
+let driverious = [{
+    name: 'Artur', age: 22, status:'proDriver',
+}
+]
+
+car1.newDriver(driverious);
+console.log(car1);
 //
 // - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -96,3 +112,40 @@ console.log(car1.drive('222'));
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+class Popelush {
+    constructor(name, age, size) {
+        this.name = name
+        this.age = age
+        this.size = size
+    }
+}
+
+const popelush = [
+new Popelush('arina', 21, 31),
+new Popelush('angela', 22, 32),
+new Popelush('anna', 23, 33),
+new Popelush('alona', 24, 34),
+new Popelush('anissa', 25, 35),
+new Popelush('abby', 26, 36),
+new Popelush('ariel', 27, 37),
+new Popelush('ariana', 28, 38),
+new Popelush('agrisha', 29, 39),
+new Popelush('alabania', 30, 40),
+new Popelush('akira', 31, 41)]
+
+const prince = new Popelush('Richard', 35,35)
+
+let array = [];
+array.push(popelush)
+
+let find = (unit1, unit2) => {
+    for (const element of unit1) {
+        if (element.size === unit2.size) {
+            return `${element.name + ' ' + unit2.name + ' ' + 'love'}`
+        }
+    }
+
+}
+console.log(find(popelush, prince));
+
