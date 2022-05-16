@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p id="content">Hello My name is Artur</p>
+<div id="rules" class ="ring,status" >
+    <ul>
+        <li class="a">Hi how are you?</li>
+        <li class="a">Hi how are you?</li>
+        <li class="a">Hi how are you?</li>
+        <li class="a">Hi how are you?</li>
+    </ul>
+</div>
+<h1 id="main_header">Lolik i Bolik</h1>
+<script>
+   let i = document.getElementById('content');
+   let t = document.getElementById('rules');
+   // i.innerText = 'kek';
+   // t.innerText = 'lol';
+   i.style.background = 'red';
+   t.style.background = 'red';
+   i.style.color = 'blue';
+   t.style.color = 'blue';
+   // console.log(document.getElementById('rules').classList);
+   // let documentation = document.querySelectorAll('*');
+   // for (const tElement of documentation) {
+   //     tElement.style.color = 'yellow';
+   // }
+   let list = document.getElementsByClassName('a');
+   for (const listElement of list) {
+       listElement.style.color = 'green';
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
